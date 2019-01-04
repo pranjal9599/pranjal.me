@@ -1,0 +1,53 @@
+@font-face {
+	font-family: nb;
+	font-weight: 400;
+	src: url(../fonts/nb_akademie_std_light.ttf);
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: nb;
+	font-display: fallback;
+	src: url(../fonts/nb_akademie_std_bold.ttf);
+	font-weight: 700;
+}
+
+
+html {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	cursor: crosshair;
+}
+
+body {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: nb, helvetica, arial, sans-serif;
+	font-weight: 400;
+	background-color: #000;
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:after { box-sizing: border-box; }
+*:before { box-sizing: border-box; }
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 20px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	font-size: 1.5rem;
+	color: rgba(255,255,255,0.6);
+	line-height: 1.5;
+}
