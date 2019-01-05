@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
 				<a href="https://twitter.com/pranjal9599">Twitter</a>&mdash;
 				<a href="https://github.com/pranjal9599">Github</a>&mdash;
 				<a href="mailto:pranjal9599@gmail.com">Mail</a>&mdash;
-				<a href="#">Résumé</a>
+				<a href="https://drive.google.com/open?id=1F5RF5sDjUgUfoLDfhqda7-FoQxeprozC">Résumé</a>
 			</span>
 		</Heading>
 	<Container>
@@ -48,7 +48,20 @@ const IndexPage = ({ data }) => (
 				meta={project.node.frontmatter.tagline}
 			/>
 		)}
+
+		<a 
+			href="https://github.com/pranjal9599/pranjal.me"
+			style={{
+				opacity: 1,
+				textAlign: 'center',
+				width: '100%',
+				display: 'block',
+				margin: '40px 0px'
+			}}
+		> <b>&mdash; Made with Gatsby &mdash;</b></a>
+
 	</Container>
+
 	</Layout>
 	</>
 )
