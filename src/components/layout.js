@@ -6,18 +6,6 @@ import styled from 'styled-components'
 
 import './layout.css'
 
-const Home = styled.div`
-	font-size: 2em;
-	/*position: sticky;*/
-	top: 0;
-	padding: 30px;
-	z-index: 100000;
-
-	@media(max-width: 700px) {
-		padding: 10px;
-	}
-`
-
 const About = styled.div`
 	position: fixed;
 	top: 50%; left: 0;
