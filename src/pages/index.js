@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => (
 				display: 'block',
 				margin: '40px 0px'
 			}}
-		> <b>&mdash; Made with Gatsby &mdash;</b></a>
+		> <b>&mdash; Coded from scratch with Gatsby &mdash;</b></a>
 
 	</Container>
 
