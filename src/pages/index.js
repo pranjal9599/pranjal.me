@@ -13,7 +13,7 @@ const Heading = styled.h1`
 	margin: 0;padding:100px;
 	@media(max-width: 700px) {
 		padding: 0px;
-		font-size: 4em;
+		font-size: 3em;
 	}
 	span {
 		font-size: 2rem;
