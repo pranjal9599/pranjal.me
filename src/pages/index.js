@@ -35,8 +35,7 @@ const IndexPage = ({ data }) => (
 			<span>
 				<a href="https://twitter.com/pranjal9599">Twitter</a>&mdash;
 				<a href="https://github.com/pranjal9599">Github</a>&mdash;
-				<a href="mailto:pranjal9599@gmail.com">Mail</a>&mdash;
-				<a href="https://drive.google.com/open?id=1F5RF5sDjUgUfoLDfhqda7-FoQxeprozC">Résumé</a>
+				<a href="mailto:pranjal9599@gmail.com">Mail</a>
 			</span>
 		</Heading>
 	<Container>
