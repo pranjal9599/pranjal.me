@@ -36,6 +36,13 @@ export default function Template(props) {
   return (
 		<Layout>
 		<Container>
+		<div
+			data-aos="fade-up"
+			data-aos-offset="400"
+			data-aos-delay="200"
+			data-aos-duration="1000"
+		>
+			<h2 style={{ fontWeight: 400 }}><Link to="/">&larr; Back to home</Link></h2>
     	<Heading>{post.frontmatter.title}</Heading>
 			{ post.frontmatter.info.split(",").map((c,i) =>
 				<C key={i}>&#9632; {c}</C>
@@ -45,6 +52,7 @@ export default function Template(props) {
 				{ prev ? <span><Link to={prev.path}>&#8592; {prev.title}</Link></span> : <span></span> }
 				{ next ? <span><Link to={next.path}>{next.title} &#8594;</Link></span> : <span></span> }
 			</NavLinks>
+		</div>
 		</Container>
 		</Layout>
   );

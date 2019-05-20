@@ -3,14 +3,13 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const ProjectHeading = styled.h2`
-	font-family: nb;
 	font-weight: normal;
 	font-size: 4em;
-	color: rgba(255,255,255,0.5);
-	padding-top: 0px; margin-top: 0px;
-	transition: color 0.2s;
+	adding-top: 0px; margin-top: 0px;
+	opacity: 0.7;
+	transition: all 0.2s;
 	&:hover {
-		color: rgba(255,255,255,0.7);
+		opacity: 1;
 	}
 	@media (max-width: 700px) {
 		font-size: 2em;

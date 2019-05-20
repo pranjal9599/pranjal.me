@@ -3,8 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
+import AOS from 'aos';
+
+
 
 import './layout.css'
+import 'aos/dist/aos.css';
 
 const About = styled.div`
 	position: fixed;
@@ -16,6 +20,9 @@ const About = styled.div`
 
 const MainContainer = styled.div`
 	padding: 10px;
+	@media(max-width: 700px) {
+		padding: 20px;
+	}
 `
 
 const Layout = ({ children }) => (
@@ -34,13 +41,12 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Pranjal' },
+            { name: 'keywords', content: 'Pranjal Saxena, Product Designer' }
           ]}
         >
           <html lang="en" />
         </Helmet>
-				<About><Link to="/">Home</Link></About>
 				<MainContainer>
           {children}
 				</MainContainer>
@@ -52,5 +58,7 @@ const Layout = ({ children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+AOS.init();
 
 export default Layout

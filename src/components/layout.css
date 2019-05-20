@@ -1,15 +1,22 @@
 @font-face {
-	font-family: nb;
-	font-weight: 400;
-	src: url(../fonts/nb_akademie_std_light.ttf);
+	font-family: SF;
+	src: url(../fonts/SF-Pro-Display-Medium.otf);
 	font-display: fallback;
 }
 
 @font-face {
-	font-family: nb;
+	font-family: SF;
+	font-weight: 400;
+	src: url(../fonts/SF-Pro-Display-Light.otf);
 	font-display: fallback;
-	src: url(../fonts/nb_akademie_std_bold.ttf);
-	font-weight: 700;
+}
+
+
+@font-face {
+	font-family: SF;
+	font-weight: 800;
+	src: url(../fonts/SF-Pro-Display-Thin.otf);
+	font-display: fallback;
 }
 
 
@@ -22,9 +29,9 @@ html {
 body {
 	margin: 0; padding: 0;
 	box-sizing: border-box;
-	font-family: nb, helvetica, arial, sans-serif;
+	font-family: SF;
 	font-weight: 400;
-	background-color: #000;
+	background-color: rgba(13,14,15,1);
 	color: #fff;
 }
 
@@ -42,7 +49,6 @@ img {
 }
 
 a {
-	text-decoration: none;
 	color: #fff;
 }
 
