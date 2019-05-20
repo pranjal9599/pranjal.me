@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
-import AOS from 'aos';
 
 
 
@@ -25,40 +24,52 @@ const MainContainer = styled.div`
 	}
 `
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Pranjal' },
-            { name: 'keywords', content: 'Pranjal Saxena, Product Designer' }
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-				<MainContainer>
-          {children}
-				</MainContainer>
-      </>
-    )}
-  />
-)
+class Layout extends React.Component {
+	componentDidMount() {
+		const AOS = require('AOS');
+		this.aos = AOS;
+		this.aos.init();
+	}
+
+	componentDidUpdate() {
+		this.aos.refresh();
+	}
+
+	render() {
+		return (
+			<StaticQuery
+				query={graphql`
+					query SiteTitleQuery {
+						site {
+							siteMetadata {
+								title
+							}
+						}
+					}
+				`}
+				render={data => (
+					<>
+						<Helmet
+							title={data.site.siteMetadata.title}
+							meta={[
+								{ name: 'description', content: 'Pranjal' },
+								{ name: 'keywords', content: 'Pranjal Saxena, Product Designer' }
+							]}
+						>
+							<html lang="en" />
+						</Helmet>
+						<MainContainer>
+							{this.props.children}
+						</MainContainer>
+					</>
+				)}
+			/>
+		)
+	}
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-AOS.init();
 
 export default Layout
