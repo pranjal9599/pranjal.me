@@ -26,7 +26,8 @@ const MainContainer = styled.div`
 
 class Layout extends React.Component {
 	componentDidMount() {
-		const AOS = require('AOS');
+		const isBrowser = typeof window !== 'undefined';
+		const AOS = isBrowser ? require('aos') : undefined;
 		this.aos = AOS;
 		this.aos.init();
 	}
