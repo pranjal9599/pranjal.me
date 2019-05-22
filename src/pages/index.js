@@ -7,7 +7,7 @@ import Project from '../components/Project';
 import { Container } from '../components/Common';
 
 const Heading = styled.h1`
-	font-size: 8em;
+	font-size: 5em;
 	font-weight: 800;
 	margin: 0;padding:50px;
 	line-height: 1;
