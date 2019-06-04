@@ -1,6 +1,6 @@
 ---
 path: "/anime-app"
-date: "2017-12-11"
+date: "2017-10-11"
 title: "Anime Streaming App"
 info: "Figma, UI Design, UX Design"
 image: "./images/animeapp/webp/Cover.webp"

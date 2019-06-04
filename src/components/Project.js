@@ -5,11 +5,20 @@ import { Link } from 'gatsby';
 const ProjectHeading = styled.h2`
 	font-weight: normal;
 	font-size: 4em;
-	adding-top: 0px; margin-top: 0px;
+	padding-top: 0px; margin-top: 0px;
 	opacity: 0.7;
+	padding: 0px;
+	margin: 0px;k
 	transition: all 0.2s;
 	&:hover {
 		opacity: 1;
+	}
+	a {
+		text-decoration: none;
+		transition: all 0.2s;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	@media (max-width: 700px) {
 		font-size: 2em;
@@ -50,7 +59,7 @@ const ProjectMeta = styled.div`
 const Project = ({ id, title, info, meta, image, path }) => (
 	<>
 		<ProjectCount>Project {id} &#10230;</ProjectCount>
-		<Link to={path}><ProjectHeading>{title}</ProjectHeading></Link>
+		<ProjectHeading><Link to={path}>{title}</Link></ProjectHeading>
 		<img src={image} alt={title}/>
 		<ProjectDescription>
 			<ProjectInfo>{info}</ProjectInfo>

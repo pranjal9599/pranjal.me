@@ -7,7 +7,7 @@ import Project from '../components/Project';
 import { Container } from '../components/Common';
 
 const Heading = styled.h1`
-	font-size: 8em;
+	font-size: 5em;
 	font-weight: 800;
 	margin: 0;padding:50px;
 	line-height: 1;
@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => (
 				data-aos="fade-up"
 				data-aos-offset="400"
 				data-aos-delay="200"
-				data-aos-duration="1000"
+				data-aos-duration="500"
 				key={i}>
 			<Project 
 				{...project.node.frontmatter} 

@@ -1,6 +1,6 @@
 ---
 path: "/coffee-app"
-date: "2017-11-07"
+date: "2017-12-07"
 title: "Coffee App"
 info: "React Native, Redux, Figma, UI Design"
 image: "images/coffee/cover1.png"

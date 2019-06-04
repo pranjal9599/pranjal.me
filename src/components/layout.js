@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
-
+import Header from './header';
 
 import './layout.css'
 import 'aos/dist/aos.css';

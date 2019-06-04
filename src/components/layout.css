@@ -11,13 +11,13 @@
 	font-display: fallback;
 }
 
-
 @font-face {
 	font-family: SF;
 	font-weight: 800;
 	src: url(../fonts/SF-Pro-Display-Thin.otf);
 	font-display: fallback;
 }
+
 
 
 html {
